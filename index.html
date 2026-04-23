@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Binary Search Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- 🔵 INTRO POPUP -->
+<div id="intro" class="popup">
+  <div class="popup-content">
+    <h1>🎮 Binary Search Game</h1>
+    <p>
+      Welcome! Your mission is to find the hidden number using Binary Search.
+      <br><br>
+      🔹 Always choose the middle  
+      🔹 If too high → go left  
+      🔹 If too low → go right  
+      <br><br>
+      Try to find the number in the fewest steps!
+    </p>
+    <button onclick="startGame()">Start Game</button>
+  </div>
+</div>
+
+<!-- 🔵 GAME -->
+<div class="game-container">
+  <h1>Binary Search Challenge</h1>
+
+  <p id="range">Range: 1 - 100</p>
+  <p id="message">Find the hidden number</p>
+  <p id="steps">Steps: 0</p>
+
+  <input type="number" id="guessInput" placeholder="Enter guess">
+  <button onclick="makeGuess()">Guess</button>
+
+  <button onclick="restartGame()" class="restart">Restart</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
